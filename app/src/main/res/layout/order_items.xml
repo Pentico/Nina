@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.tam.tuane.ninaagile.adaptors.OrderItems">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cardview0"
+                            android:layout_marginBottom="10dp"
+                            >
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:entries="@array/type_of_shoes"
+                                android:prompt="@string/type_shoes_prompt"
+                                android:id="@+id/type_shoe_spinner"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                />
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:entries="@array/type_of_colors"
+                                android:prompt="@string/type_colors_prompt"
+                                android:id="@+id/type_color_spinner"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cardview1"
+                            android:layout_below="@+id/cardview0"
+                            android:layout_marginBottom="10dp"
+                            >
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:id="@+id/wash"
+                                android:text="@string/_wash"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:id="@+id/polish"
+                                android:text="@string/_polish"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cardview1"
+                            >
+
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:text="Add To Cart"
+                                android:id="@+id/submit"
+                                android:textAllCaps="false"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/cartbtn"
+                                android:textColor="@android:color/white"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

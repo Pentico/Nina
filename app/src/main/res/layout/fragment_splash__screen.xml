@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tam.tuane.ninaagile.front_end.fragments.Splash_Screen"
+    android:id="@+id/fragment_splash_screen"
+    android:background="@drawable/back8"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/nina_logo"
+            />
+    <Button
+        android:id="@+id/clean_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:text="@string/clean_button"
+        />
+</FrameLayout>

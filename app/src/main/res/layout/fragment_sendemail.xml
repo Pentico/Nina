@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tam.tuane.ninaagile.front_end.fragments.sendemail"
+    android:background="@drawable/back8"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_margin="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Subject : "
+                    android:textSize="20sp"
+                    android:gravity="fill_vertical"
+                    />
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/emailsubject"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Body :"
+                android:textSize="20sp"
+                android:gravity="fill_vertical"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Start here ... "
+                android:gravity="start"
+                android:id="@+id/emailbody"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Send"
+                android:layout_gravity="center"
+                android:background="@drawable/cartbtn"
+                android:textColor="@android:color/white"
+                android:id="@+id/emalSendButton"
+                android:layout_marginTop="10dp"
+
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</FrameLayout>
