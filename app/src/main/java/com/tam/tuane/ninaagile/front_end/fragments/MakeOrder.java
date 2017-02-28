@@ -58,7 +58,7 @@ public class MakeOrder extends Engine implements View.OnClickListener {
             container.removeAllViews();
 
         }*/
-        getActivity().setTitle("Data capture");
+        getActivity().setTitle(" Information");
        /* getActivity().getActionBar().setIcon(R.mipmap.ic_launcher);*/
 
 
